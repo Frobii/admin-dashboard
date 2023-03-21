@@ -7,10 +7,6 @@
     font-family: roboto-slap;
 }
 
-div {
-    border: 1px solid black;
-}
-
 body {
     margin: 0px;
     height: 100vh;
@@ -24,6 +20,8 @@ body {
     grid-row-end: 3;
     display: grid;
     grid-template-rows: 1fr 5fr 5fr;
+    background-color: rgba(62, 139, 226, 0.902);
+    color:white;
 }
 
 .logo {
@@ -53,4 +51,74 @@ body {
     align-items: center;
     font-size: 21px;
     height:5vh;
+}
+
+.header {
+    display: grid;
+}
+
+.header-top {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 10fr;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.search-bar {
+    border: 1px solid rgba(128, 128, 128, 0.285);
+    background-color: rgba(128, 128, 128, 0.285);
+    border-radius: 15px;
+    height: 30px;
+}
+
+.user-details {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 5fr 4fr;
+}
+
+.greet-user {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+}
+
+.actions {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.actions * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    color:white;
+    border-radius: 15px;
+    border: 1px solid rgba(62, 139, 226, 0.902);
+    background-color: rgba(62, 139, 226, 0.902);
 }
