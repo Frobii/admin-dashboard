@@ -126,3 +126,31 @@ body {
 .main-content * {
     border: 1px solid black;
 }
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 2fr;
+    background-color: rgba(128, 128, 128, 0.285);
+    padding-top: 30px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.your-projects {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.main-content-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column-reverse;
+}
