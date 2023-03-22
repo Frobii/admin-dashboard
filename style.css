@@ -1,10 +1,10 @@
 @font-face {
-    font-family: roboto-slap;
+    font-family: roboto-slab;
     src: url(RobotoSlab-VariableFont_wght.ttf);
 }
 
 * {
-    font-family: roboto-slap;
+    font-family: roboto-slab;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 .logo {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     border: none;
 }
@@ -47,7 +47,7 @@ body {
 .navigation {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     font-size: 21px;
     height:5vh;
@@ -249,4 +249,18 @@ body {
 .content, .announcement-content, .description {
     color: grey;
     font-size: 16px;
+}
+.navigation-image {
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.logo-image {
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
